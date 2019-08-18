@@ -483,6 +483,11 @@ p {
   /* opacity: 0.9; */
 }
 
+.container-youtube {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
 /* Registration */
 #registration {
   padding: 2rem;
