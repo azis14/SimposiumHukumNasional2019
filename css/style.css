@@ -431,7 +431,7 @@ p {
 
 .count-down h2 {
   color: #28364a;
-  padding-top: 1.5rem;
+  padding: 1.5rem 0 1rem 0;
   letter-spacing: 1px;
   line-height: 1;
   font-size: 2rem;
@@ -700,6 +700,11 @@ p {
 
   .count-down h2 {
     font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .count-down a {
+    margin: 0 auto;
   }
 }
 
