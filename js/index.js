@@ -92,3 +92,11 @@ let countDown = setInterval(function() {
     clearInterval(x);
   }
 }, 1000);
+
+$(document).ready(function () {
+
+  setTimeout(function () {
+    $('body').addClass('loaded');
+  }, 3000);
+
+});
