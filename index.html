@@ -21,7 +21,6 @@
 
       <div class="loader-section section-left"></div>
       <div class="loader-section section-right"></div>
-
     </div>
 
     <input type="checkbox" id="burger" />
@@ -241,7 +240,12 @@
 
     <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-1.9.1.min.js"><\/script>'
+        );
+    </script>
     <script src="./js/index.js"></script>
   </body>
 </html>

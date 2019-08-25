@@ -93,10 +93,14 @@ let countDown = setInterval(function() {
   }
 }, 1000);
 
-$(document).ready(function () {
+// $(document).ready(function() {
+//   setTimeout(function() {
+//     $('body').addClass('loaded');
+//   }, 3000);
+// });
 
-  setTimeout(function () {
-    $('body').addClass('loaded');
-  }, 3000);
+const body = document.querySelector('body');
 
+window.addEventListener('DOMContentLoaded', e => {
+  body.classList.add('loaded');
 });
