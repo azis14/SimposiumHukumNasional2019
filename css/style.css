@@ -369,7 +369,6 @@ p {
 .burger-lines .line-container .line:nth-child(3) {
   animation: change-color-back 0.75s ease forwards;
 }
-
 @keyframes change-color-back {
   from {
     opacity: 0;
@@ -379,7 +378,6 @@ p {
     background: linear-gradient(45deg, #d65353, #e87a54);
   }
 }
-
 #burger:checked ~ .burger-lines .line-container .line:nth-child(1) {
   animation: change-color 1s ease forwards;
 }
@@ -389,7 +387,6 @@ p {
 #burger:checked ~ .burger-lines .line-container .line:nth-child(3) {
   animation: change-color 1s ease 0.1s forwards;
 }
-
 @keyframes change-color {
   to {
     background: #f5e7e3;
@@ -532,7 +529,7 @@ p {
   position: absolute;
   background: url('../asset/pembatas\ 5.png') no-repeat center bottom/cover;
   width: 100%;
-  height: 100%;
+  height: 120%;
   top: 0;
   left: 0;
 }
@@ -578,7 +575,8 @@ p {
 .count-down {
   background: #d65353;
   text-align: center;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
+  margin-top: 7rem;
 }
 
 .count-down h2 {
@@ -668,7 +666,6 @@ p {
   top: 0;
   width: 100%;
 }
-
 .after-sticky {
   /* animation: after-stick 1s ease forwards; */
 /* transition: padding 2s ease !important;
@@ -847,7 +844,7 @@ p {
   }
 
   .count-down {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 
   .count-down h2 {
