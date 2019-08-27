@@ -64,7 +64,7 @@ links.forEach(link => {
   });
 });
 
-let deadline = new Date('October 1, 2019');
+let deadline = new Date('November 11, 2019');
 
 const day = document.getElementById('day');
 const hour = document.getElementById('hour');
