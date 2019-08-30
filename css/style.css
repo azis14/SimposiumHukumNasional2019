@@ -15,10 +15,6 @@ a {
   color: #28364a;
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
-
 body {
   line-height: 1.4;
   font-size: 16px;
@@ -689,8 +685,11 @@ p {
 /* About */
 #about {
   padding: 2rem;
+  padding-bottom: 20rem;
   background: #fff;
-  /* background: linear-gradient(0, #f5e7e3, #e87a54); */
+  background: linear-gradient(0, #f5e7e3, #e87a54);
+  background: url('../asset/webdesain02.png') no-repeat center left/cover;
+
   /* opacity: 0.9; */
 }
 
@@ -699,12 +698,33 @@ p {
   margin: 20px auto;
 }
 
+.pembatas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url('../asset/webdesain01.png') no-repeat center bottom/cover;
+  width: 100vw;
+  height: 100vh;
+}
+
 /* Registration */
 #registration {
   padding: 2rem;
+  padding-bottom: 15rem;
   background: #28364a;
   color: #fff;
   width: 100%;
+  position: relative;
+}
+
+#registration::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: url('../asset/webdesain01.png') no-repeat center bottom/cover;
 }
 
 #registration .button-wrapper {
@@ -776,6 +796,23 @@ p {
   height: 100vh;
 } */
 
+.image-ending {
+  width: 100%;
+  height: 25vh;
+  position: relative;
+  background: #28364a;
+}
+
+.image-ending img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* 
+.image-ending img {
+  width: 100%;
+} */
+
 @media (max-width: 768px) {
   #navbar {
     display: none;
@@ -829,10 +866,6 @@ p {
     padding: 10px;
   }
 
-  #main-footer .footer-content .social i {
-    /* margin-left: 10px; */
-  }
-
   .count-down .count-down-wrapper div h3 {
     font-size: 3rem;
   }
@@ -852,6 +885,19 @@ p {
 
   .count-down a {
     margin: 0 auto;
+  }
+
+  #about {
+    background: #fff;
+    padding-bottom: 2rem;
+  }
+
+  #registration {
+    padding-bottom: 2rem;
+  }
+
+  #registration::after {
+    display: none;
   }
 }
 
