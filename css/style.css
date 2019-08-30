@@ -572,7 +572,7 @@ p {
   background: transparent;
   position: absolute;
   text-align: center;
-  padding: 2rem 2rem;
+  padding: 0.5rem 2rem;
   bottom: 0;
   left: 0;
   right: 0;
@@ -605,7 +605,7 @@ p {
   width: 15rem; */
 
 .count-down .count-down-wrapper div > h3 {
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 600;
 }
 
@@ -920,5 +920,34 @@ p {
 
   .modal {
     display: block;
+  }
+
+  .count-down .count-down-wrapper div h3 {
+    font-size: 3rem;
+  }
+
+  .count-down .count-down-wrapper div h4 {
+    font-size: 1rem;
+  }
+
+  .count-down {
+    padding-bottom: 0.5rem;
+  }
+
+  .count-down h2 {
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .count-down a {
+    margin: auto;
+  }
+}
+
+/* Khusus Iphone 5 */
+
+@media (max-height: 320px){
+  .count-down {
+    padding-bottom: 0;
   }
 }
