@@ -689,6 +689,7 @@ p {
   background: #fff;
   background: linear-gradient(0, #f5e7e3, #e87a54);
   background: url('../asset/webdesain02.png') no-repeat center left/cover;
+  overflow: hidden;
 
   /* opacity: 0.9; */
 }
@@ -696,6 +697,17 @@ p {
 .container-youtube {
   max-width: 500px;
   margin: 20px auto;
+}
+
+.disappear {
+  transition: all 2s ease !important;
+  transform: translateX(100px) !important;
+  opacity: 0 !important;
+}
+.appear {
+  transition: all 2s ease !important;
+  transform: translateX(0) !important;
+  opacity: 1 !important;
 }
 
 /* Registration */
@@ -926,7 +938,7 @@ p {
 
 /* Khusus Iphone 5 */
 
-@media (max-height: 320px){
+@media (max-height: 320px) {
   .count-down {
     padding-bottom: 0;
   }

@@ -4,14 +4,30 @@ let secondaryNavbar = document.getElementById('navbar-after-header');
 window.addEventListener('DOMContentLoaded', e => showSecondNavbar());
 let section1Top = document.querySelector('#about').offsetTop;
 
+let text = document.querySelectorAll('.disappear');
+
+let topOfEveryText = Array.from(document.querySelectorAll('.disappear')).map(
+  item => item.getBoundingClientRect().top + window.scrollY
+);
+
 window.addEventListener('resize', e => {
   section1Top = document.querySelector('#about').offsetTop;
+
+  let topOfEveryText = Array.from(document.querySelectorAll('.disappear')).map(
+    item => item.getBoundingClientRect().top + window.scrollY
+  );
+
   // console.log("section1top = " + section1Top);
   showSecondNavbar();
+  appearText();
 });
 
 // // Second navbar shows up after scroll
-window.onscroll = showSecondNavbar;
+// window.onscroll = showSecondNavbar;
+window.addEventListener('scroll', e => {
+  showSecondNavbar();
+  appearText();
+});
 
 // Top of Section 1
 
@@ -23,6 +39,14 @@ function showSecondNavbar() {
     // secondaryNavbar.classList.add("no-show");
     secondaryNavbar.classList.remove('show');
   }
+}
+
+function appearText() {
+  topOfEveryText.forEach((item, index) => {
+    if (window.pageYOffset + window.innerHeight >= item) {
+      text[index].classList.add('appear');
+    }
+  });
 }
 
 // if checkbox is checked
